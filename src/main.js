@@ -1,24 +1,17 @@
 import "./css/style.css";
-import javascriptLogo from "./assets/svg/javascript.svg";
-import viteLogo from "./assets/svg/vite.svg";
-import { setupCounter } from "./js/counter.js";
+const searchBtn = document.querySelector("#search-btn");
+const searchBar = document.querySelector("#search-bar");
 
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
-
-setupCounter(document.querySelector("#counter"));
+window.addEventListener("load", () => {
+  searchBtn.addEventListener("click", () => {
+    if (searchBar.classList.contains("search-active")) {
+      // ADD this to remove search-bar button
+      searchBar.classList.remove("search-active");
+      // -------
+      searchBar.value = "";
+      return;
+    } else {
+      searchBar.classList.add("search-active");
+    }
+  });
+});

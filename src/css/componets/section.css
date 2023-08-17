@@ -1,0 +1,19 @@
+@layer components {
+  .section-title {
+    @apply block h-6 w-6 bg-cover bg-center bg-no-repeat;
+  }
+  .section-title-large {
+    @apply block h-6 w-6 bg-cover bg-center bg-no-repeat;
+  }
+  .section-title-small {
+  }
+  .section-subtitle {
+    @apply block h-6 w-6 bg-cover bg-center bg-no-repeat;
+  }
+  .section-description {
+    @apply leading-6;
+  }
+  .section-title {
+    @apply block h-6 w-6 bg-cover bg-center bg-no-repeat;
+  }
+}

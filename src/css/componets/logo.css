@@ -1,0 +1,8 @@
+@layer components {
+  .logo {
+    @apply flex items-center;
+  }
+  .logo-img {
+    @apply h-[1.19rem] max-w-[7.15rem];
+  }
+}

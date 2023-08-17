@@ -1,0 +1,5 @@
+@layer components {
+  .btn-icon {
+    @apply block h-6 w-6 bg-cover bg-center bg-no-repeat;
+  }
+}
