@@ -2,7 +2,7 @@
   .logo {
     @apply flex items-center;
   }
-  .logo-img {
-    @apply h-[1.19rem] max-w-[7.15rem];
+  .logo-icon {
+    @apply h-[1.19rem] min-w-[7.15rem];
   }
 }

@@ -1,0 +1,28 @@
+@layer components {
+  .gallery {
+    @apply mx-auto;
+  }
+  .gallery-item {
+    @apply mb-[2.63rem] h-[21rem] w-[280px] cursor-pointer;
+  }
+  .gallery-item:nth-child(3n + 2) {
+    @apply w-[281px];
+  }
+  @screen tablet {
+    .gallery-item {
+      @apply w-[451px];
+    }
+    .gallery-item:nth-child(3n + 2) {
+      @apply w-[452px];
+    }
+  }
+  .gallery-item img {
+    @apply h-full w-full object-cover;
+  }
+  .gallery-item--medium {
+    @apply h-[28rem];
+  }
+  .gallery-item--large {
+    @apply h-[37rem];
+  }
+}

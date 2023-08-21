@@ -1,0 +1,32 @@
+@layer components {
+  .card {
+    @apply grid grid-cols-1  items-center justify-center gap-x-6  gap-y-10 self-center mobile-end:max-w-md tablet:grid-cols-4   tablet-end:max-w-[52rem]  laptop:grid-cols-3 laptop:gap-x-16;
+  }
+  .card-item {
+    @apply flex h-full flex-col items-start justify-between rounded-[1.75rem] bg-white-500 px-10 py-12;
+  }
+  .card-content {
+    @apply mb-16 mt-8;
+  }
+  .card-item:nth-child(1) {
+    @apply tablet-end:col-[1/3];
+  }
+  .card-item:nth-child(2) {
+    @apply tablet-end:col-[3/5];
+  }
+  .card-item:nth-child(3) {
+    @apply tablet-end:col-[2/4]  tablet-end:row-[2/2];
+  }
+  .card-title {
+    @apply mb-3 font-Montserrat text-[1.75rem] font-medium leading-[1.15] tracking-[-0.0875rem];
+  }
+  .card-description {
+    @apply text-small tracking-[-0.14px];
+  }
+  .card-link {
+    @apply border-b-[1px] pb-1 text-accent-green;
+  }
+  .card-arrow {
+    @apply ml-[0.62rem];
+  }
+}

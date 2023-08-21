@@ -1,5 +1,14 @@
 @layer components {
   .btn-icon {
-    @apply block h-6 w-6 bg-cover bg-center bg-no-repeat;
+    @apply ml-2 inline-block h-4 w-4 bg-cover bg-center bg-no-repeat align-middle;
+  }
+  .btn {
+    @apply rounded-[12.5rem] px-[1.38rem] pb-[0.88rem] pt-3 text-white-400;
+  }
+  .btn-longer {
+    @apply px-6;
+  }
+  .btn-shorter {
+    @apply pb-3 pt-[0.62rem];
   }
 }

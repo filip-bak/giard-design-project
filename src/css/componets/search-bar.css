@@ -1,5 +1,0 @@
-@layer components {
-  .search-bar {
-    @apply absolute -bottom-8 -right-0  w-1/2 origin-right rounded border-green-400  bg-slate-500  transition-all duration-300;
-  }
-}
