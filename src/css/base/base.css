@@ -1,0 +1,21 @@
+@layer base {
+  body {
+    @apply mx-auto max-w-[1440px] font-body text-base/normal text-black;
+
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #666666;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    display: block;
+    z-index: 999;
+    background-color: transparent;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    pointer-events: none;
+  }
+}

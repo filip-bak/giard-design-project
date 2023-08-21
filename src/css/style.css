@@ -1,17 +1,16 @@
+@import "./base/base.css";
+
 @import "./componets/button.css";
 @import "./componets/logo.css";
-@import "./componets/search-bar.css";
-@import "./componets/section.css";
+@import "./componets/card.css";
+@import "./componets/gallery.css";
+@import "./componets/modal.css";
+
+@import "./utilities/utils.css";
+@import "./utilities/typography.css";
 
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
-
-@layer utilities {
-  .search-active {
-    @apply visible  w-full translate-x-0 scale-x-100  opacity-100  duration-300;
-  }
-}
-/*  mobile-md:w-3/4 tablet:w-full */
