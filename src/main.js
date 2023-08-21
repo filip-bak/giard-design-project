@@ -1,17 +1,24 @@
 import "./css/style.css";
-const searchBtn = document.querySelector("#search-btn");
-const searchBar = document.querySelector("#search-bar");
+import { handleGaleryClick } from "./js/gallery/masonry-gallery.mjs";
+import { handleModalClick } from "./js/gallery/modal";
+import {
+  handleSearchClick,
+  handleSearchEnterKey,
+} from "./js/search-bar/toggle-search";
+
+export const els = {
+  modalImg: document.querySelector("#modal-img"),
+  modal: document.querySelector("#modal"),
+  gallery: document.querySelector(".gallery"),
+  searchBtn: document.querySelector("#search-btn"),
+  searchBar: document.querySelector("#search-bar"),
+};
 
 window.addEventListener("load", () => {
-  searchBtn.addEventListener("click", () => {
-    if (searchBar.classList.contains("search-active")) {
-      // ADD this to remove search-bar button
-      searchBar.classList.remove("search-active");
-      // -------
-      searchBar.value = "";
-      return;
-    } else {
-      searchBar.classList.add("search-active");
-    }
-  });
+  els.searchBar.addEventListener("keyup", handleSearchEnterKey);
+  els.searchBtn.addEventListener("click", handleSearchClick);
+
+  els.gallery.addEventListener("click", handleGaleryClick);
+
+  els.modal.addEventListener("click", handleModalClick);
 });
