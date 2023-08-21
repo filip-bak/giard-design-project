@@ -1,0 +1,35 @@
+@layer utilities {
+  .title-primary {
+    @apply font-Montserrat text-[2rem]  font-medium leading-[1.167];
+  }
+  @screen tablet-end {
+    .title-primary {
+      @apply text-[2.7rem];
+    }
+  }
+  @screen laptop {
+    .title-primary {
+      @apply text-[3.75rem];
+    }
+  }
+  .title-secondary {
+    @apply font-Montserrat text-3xl/9 font-medium leading-[1.15] tracking-[-.09rem];
+  }
+  @screen tablet {
+    .title-secondary {
+      @apply text-[3rem];
+    }
+  }
+  .title-italic {
+    @apply font-body italic tracking-normal;
+  }
+  .subtitle {
+    @apply text-[0.75rem];
+  }
+  .contact-info {
+    @apply font-Montserrat text-[2.5rem] leading-[1.2] tracking-[-0.125rem];
+  }
+  .contact-italic {
+    @apply font-body italic tracking-[0.0625rem];
+  }
+}
