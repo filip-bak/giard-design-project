@@ -3,10 +3,7 @@
     @apply mx-auto;
   }
   .gallery-item {
-    @apply mb-[2.63rem] h-[21rem] w-[280px] cursor-pointer;
-  }
-  .gallery-item:nth-child(3n + 2) {
-    @apply w-[281px];
+    @apply mb-[2.63rem] h-[21rem] w-[270px] cursor-pointer;
   }
   @screen tablet {
     .gallery-item {

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -181,7 +181,7 @@
       <section class="grid grid-cols-1 tablet:grid-cols-2">
         <!-- --------------  Image  -------------- -->
         <img
-          class="h-full w-full object-cover object-left"
+          class="h-full w-full object-cover object-center"
           src="./src/assets/images/about-banner.jpg"
           alt="Banner"
         />
@@ -220,7 +220,7 @@
         class="flex flex-col justify-center gap-y-16 bg-accent-apricot-500 pb-11 pt-14 tablet:gap-y-24 tablet:pt-20 laptop:pt-[7.5rem]"
       >
         <div
-          class="max-w-[34rem] self-center text-center tablet:ml-16 tablet:max-w-[44rem] tablet:self-start tablet:text-start laptop:ml-28"
+          class="max-w-[34rem] self-center text-center tablet:ml-16 tablet:max-w-[44rem] tablet:self-start tablet:text-start laptop:ml-40"
         >
           <p class="subtitle text-accent-green">Realizacje</p>
           <h2 class="title-secondary mt-4">
@@ -304,6 +304,31 @@
           </div>
         </div>
       </section>
+      <!-- --------------  Contact  -------------- -->
+      <section
+        class="flex items-center justify-center bg-white-400 py-[3.5rem] text-white-400"
+      >
+        <div
+          class="flex flex-col items-center justify-between gap-x-16 gap-y-8 bg-accent-green px-[1rem] py-[7.5rem] mobile-md-end:px-[3.5rem] tablet:flex-row tablet:px-[6.88rem]"
+        >
+          <h2 class="contact-info text-center tablet:text-left">
+            Zostańmy w kontakcie!<br />
+            Znajdziesz nas na <span class="contact-italic">Instagramie</span>.
+          </h2>
+          <div class="flex w-[9.8125rem] flex-col items-start gap-y-6">
+            <p class="text-center tracking-tightest tablet:text-left">
+              Śledź nasze najnowsze realizacje!
+            </p>
+            <a
+              class="btn btn-longer btn-shorter self-center bg-white-400 text-accent-green tablet:self-start"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer
@@ -369,7 +394,7 @@
         <p>Prawa zastrzeżone © 2022</p>
         <div class="flex gap-x-4">
           <p>made by</p>
-          <a class="logo" href="">
+          <a class="logo" href="https://adrespect.pl">
             <img
               class="h-[1.4rem] min-w-[7rem]"
               src="/src/assets/svg/company-logo.svg"
