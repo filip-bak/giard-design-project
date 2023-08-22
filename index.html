@@ -29,7 +29,7 @@
           <li class="hidden tablet:list-item">
             <button
               id="btn-menu"
-              class="hover:text-accent-lightgreen focus:text-accent-lightgreen flex items-center gap-x-[0.31rem] text-small"
+              class="flex items-center gap-x-[0.31rem] text-small hover:text-accent-lightgreen focus:text-accent-lightgreen"
             >
               Oferta
               <div
@@ -38,37 +38,37 @@
               ></div>
             </button>
             <div
-              class="invisible absolute right-64 flex translate-y-2 flex-col rounded bg-white-400 px-2 py-2 opacity-0 shadow-md transition-all"
+              class="invisible absolute right-64 flex translate-y-2 flex-col gap-y-2 rounded border-2 border-accent-green bg-accent-apricot-600 px-2 py-2 text-white-400 opacity-0 shadow-md transition-all"
               id="dropdown-menu"
             >
               <a
-                class="hover:text-accent-lightgreen gap-x-1 pl-1 text-small"
+                class="gap-y-1 pl-1 text-small transition-colors hover:text-accent-lightgreen"
                 href="#"
               >
                 Ogrody nowoczesne
               </a>
               <a
-                class="hover:text-accent-lightgreen gap-x-1 pl-1 text-small"
+                class="gap-y-1 pl-1 text-small transition-colors hover:text-accent-lightgreen"
                 href="#"
               >
                 Ogrody drewniane
               </a>
               <a
-                class="hover:text-accent-lightgreen gap-x-1 pl-1 text-small"
+                class="gap-y-1 pl-1 text-small transition-colors hover:text-accent-lightgreen"
                 href="#"
               >
                 Ogrody kwieciste
               </a>
             </div>
           </li>
-          <li class="hover:text-accent-lightgreen hidden tablet:list-item">
-            <a class="text-small" href="">O firmie</a>
+          <li class="hidden hover:text-accent-lightgreen tablet:list-item">
+            <a class="text-small" href="#about">O firmie</a>
           </li>
-          <li class="hover:text-accent-lightgreen hidden tablet:list-item">
-            <a class="text-small" href="">Realizacje</a>
+          <li class="hidden hover:text-accent-lightgreen tablet:list-item">
+            <a class="text-small" href="#accomplishments">Realizacje</a>
           </li>
-          <li class="hover:text-accent-lightgreen hidden tablet:list-item">
-            <a class="text-small" href="">Kontakt</a>
+          <li class="hidden hover:text-accent-lightgreen tablet:list-item">
+            <a class="text-small" href="#contact">Kontakt</a>
           </li>
           <li class="flex items-center">
             <div
@@ -83,12 +83,13 @@
             </div>
             <button
               id="search-btn"
-              class="btn-icon btn-loop ml-0 bg-icon-search transition"
+              class="btn-icon btn-icon-transition ml-0 bg-icon-search"
             ></button>
-            <!-- invert(25%) sepia(92%) saturate(355%) hue-rotate(88deg) -->
           </li>
-          <li class="tablet:hidden">
-            <button class="btn-icon scale-125 bg-icon-burger"></button>
+          <li class="flex tablet:hidden">
+            <button
+              class="btn-icon btn-icon-transition scale-125 bg-icon-burger"
+            ></button>
           </li>
         </ul>
       </nav>
@@ -219,7 +220,7 @@
         </div>
       </section>
       <!-- --------------  About Company  -------------- -->
-      <section class="grid grid-cols-1 tablet:grid-cols-2">
+      <section id="about" class="grid grid-cols-1 tablet:grid-cols-2">
         <!-- --------------  Image  -------------- -->
         <img
           class="h-full w-full object-cover object-center"
