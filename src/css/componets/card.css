@@ -3,10 +3,16 @@
     @apply grid grid-cols-1  items-center justify-center gap-x-6  gap-y-10 self-center mobile-end:max-w-md tablet:grid-cols-4   tablet-end:max-w-[52rem]  laptop:grid-cols-3 laptop:gap-x-16;
   }
   .card-item {
-    @apply flex h-full flex-col items-start justify-between rounded-[1.75rem] bg-white-500 px-10 py-12 transition-shadow duration-200;
+    @apply flex h-full flex-col items-start justify-between rounded-[1.75rem] bg-white-500 px-10 py-12 transition-shadow duration-300;
   }
   .card-item:hover {
-    @apply shadow-lg transition-shadow;
+    @apply shadow-lg transition-shadow duration-300;
+  }
+  .card-item img {
+    @apply transition duration-300;
+  }
+  .card-item:hover img {
+    @apply filter-lightgreen transition duration-300;
   }
   .card-content {
     @apply mb-16 mt-8;
@@ -27,9 +33,15 @@
     @apply text-small tracking-[-0.14px];
   }
   .card-link {
-    @apply border-b-[1px] pb-1 text-accent-green;
+    @apply border-b-[1px] pb-1 text-accent-green transition-all;
+  }
+  .card-link:hover {
+    @apply text-accent-lightgreen transition-all duration-200;
+  }
+  .card-link:hover .card-arrow {
+    @apply filter-lightgreen translate-x-[2px] transition-all duration-200;
   }
   .card-arrow {
-    @apply ml-[0.62rem];
+    @apply ml-[0.62rem] transition-all;
   }
 }

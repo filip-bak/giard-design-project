@@ -8,8 +8,12 @@
   .arrow-rotate {
     @apply rotate-180 transition-transform duration-200;
   }
+  .filter-lightgreen {
+    filter: invert(25%) sepia(92%) saturate(355%) hue-rotate(88deg)
+      brightness(92%) contrast(92%);
+  }
   .add-more {
-    @apply pointer-events-none translate-y-full opacity-0 transition-all duration-200;
+    @apply pointer-events-none translate-y-full transition-all duration-[3s];
   }
   .slider-scroll-none::-webkit-scrollbar {
     display: none;

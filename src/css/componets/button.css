@@ -50,8 +50,6 @@
     @apply transition-[filter] duration-150;
   }
   .btn-icon-transition:hover {
-    @apply transition-[filter] duration-150;
-    filter: invert(25%) sepia(92%) saturate(355%) hue-rotate(88deg)
-      brightness(92%) contrast(92%);
+    @apply filter-lightgreen transition-[filter] duration-150;
   }
 }
