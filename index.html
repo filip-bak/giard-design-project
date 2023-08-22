@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -29,7 +29,7 @@
           <li class="hidden tablet:list-item">
             <button class="flex items-center gap-x-[0.31rem] text-small">
               Oferta
-              <div class="btn-icon h-3 w-3 bg-icon-nav-arrow"></div>
+              <div class="btn-icon ml-0 h-3 w-3 bg-icon-nav-arrow"></div>
             </button>
           </li>
           <li class="hidden tablet:list-item">
@@ -81,10 +81,18 @@
           <div
             class="mb-6 flex flex-col gap-x-9 gap-y-4 self-center whitespace-nowrap mobile-md-end:flex-row mobile-md-end:gap-x-1 tablet:mb-0 tablet:self-start laptop:flex-row"
           >
-            <button class="btn bg-accent-green">Skontaktuj się z nami</button>
-            <button class="btn border border-accent-green text-accent-green">
+            <a href="#contact" class="btn btn-longer bg-accent-green">
+              Skontaktuj się z nami
+            </a>
+            <a
+              href="#accomplishments"
+              class="btn border border-accent-green text-accent-green"
+            >
               Zobacz nasze realizacje
-            </button>
+              <div
+                class="btn-icon hidden rotate-90 bg-icon-arrow tablet:inline-block"
+              ></div>
+            </a>
           </div>
         </div>
         <!-- --------------  Slider  -------------- -->
@@ -217,6 +225,7 @@
       </section>
       <!-- --------------  Accomplishments  -------------- -->
       <section
+        id="accomplishments"
         class="flex flex-col justify-center gap-y-16 bg-accent-apricot-500 pb-11 pt-14 tablet:gap-y-24 tablet:pt-20 laptop:pt-[7.5rem]"
       >
         <div
@@ -306,6 +315,7 @@
       </section>
       <!-- --------------  Contact  -------------- -->
       <section
+        id="contact"
         class="flex items-center justify-center bg-white-400 py-[3.5rem] text-white-400"
       >
         <div
@@ -320,7 +330,7 @@
               Śledź nasze najnowsze realizacje!
             </p>
             <a
-              class="btn btn-longer btn-shorter self-center bg-white-400 text-accent-green tablet:self-start"
+              class="btn btn-longer btn-shorter btn-white self-center text-accent-green tablet:self-start"
               href="https://www.instagram.com"
               target="_blank"
             >
@@ -334,6 +344,7 @@
     <footer
       class="bg-black px-8 py-20 text-white-400 tablet:px-24 laptop:px-[12.5rem]"
     >
+      <!-- --------------  Footer Info  -------------- -->
       <div
         class="mb-18 flex flex-col gap-y-12 laptop:mb-[7.5rem] laptop:gap-y-[3.88rem]"
       >
@@ -352,7 +363,9 @@
             class="flex flex-col items-center gap-y-4 text-center tablet:text-left laptop:flex-row"
           >
             <p class="laptop:mr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
-            <button class="btn bg-accent-green">Skontaktuj się z nami</button>
+            <a href="#contact" class="btn btn-longer bg-accent-green">
+              Skontaktuj się z nami
+            </a>
           </div>
         </div>
 
@@ -388,6 +401,7 @@
           </ul>
         </div>
       </div>
+      <!-- --------------  Rights reserved  -------------- -->
       <div
         class="relative flex flex-col items-center justify-between tablet:flex-row"
       >
