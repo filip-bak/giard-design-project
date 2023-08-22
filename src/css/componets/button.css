@@ -1,14 +1,49 @@
 @layer components {
-  .btn-icon {
-    @apply ml-2 inline-block h-4 w-4 bg-cover bg-center bg-no-repeat align-middle;
-  }
   .btn {
-    @apply rounded-[12.5rem] px-[1.38rem] pb-[0.88rem] pt-3 text-white-400;
+    --_transition: all 0.5s ease-in-out;
+
+    isolation: isolate;
+    @apply relative overflow-hidden rounded-[12.5rem]
+      px-[1.38rem] pb-[0.88rem] pt-3 text-center text-white-400;
+  }
+  .btn::before {
+    --_shine-grandient: linear-gradient(
+      120deg,
+      transparent,
+      rgb(255 255 255 / 0.25),
+      transparent
+    );
+    content: "";
+    z-index: -1;
+    @apply pointer-events-none
+      absolute inset-y-0 -left-full h-full w-full;
+
+    background: var(--_shine-grandient);
+    transition: var(--_transition);
+  }
+  .btn:hover::before {
+    @apply left-full;
+
+    transition: var(--_transition);
+  }
+  .btn-white {
+    @apply bg-white-400;
+  }
+  .btn-white::before {
+    --_shine-grandient: linear-gradient(
+      120deg,
+      transparent,
+      theme(colors.accent.apricot.500),
+      transparent
+    );
   }
   .btn-longer {
     @apply px-6;
   }
   .btn-shorter {
     @apply pb-3 pt-[0.62rem];
+  }
+  .btn-icon {
+    @apply ml-2 inline-block h-4 w-4 bg-cover bg-center bg-no-repeat align-middle;
   }
 }
