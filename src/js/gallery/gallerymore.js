@@ -6,18 +6,18 @@ const blocker = document.querySelector("#blocker");
 
 const galleryItemsData = [
   {
-    src: "/src/assets/images/gallery/bridge-garden.jpg",
-    srcset: "/src/assets/images/gallery/bridge-garden@2x.jpg 2x",
+    src: "gallery/bridge-garden.jpg",
+    srcset: "gallery/bridge-garden@2x.jpg 2x",
     class: ["gallery-item"],
   },
   {
-    src: "/src/assets/images/gallery/park-garden.jpg",
-    srcset: "/src/assets/images/gallery/park-garden@2x.jpg 2x",
+    src: "gallery/park-garden.jpg",
+    srcset: "gallery/park-garden@2x.jpg 2x",
     class: ["gallery-item", "gallery-item--medium"],
   },
   {
-    src: "/src/assets/images/gallery/whirlpool-garden.jpg",
-    srcset: "/src/assets/images/gallery/whirlpool-garden@2x.jpg 2x",
+    src: "gallery/whirlpool-garden.jpg",
+    srcset: "gallery/whirlpool-garden@2x.jpg 2x",
     class: ["gallery-item"],
   },
 ];
