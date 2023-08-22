@@ -17,11 +17,9 @@
     <header class="desktop:px-18 px-4 py-6 tablet:px-10">
       <nav class="relative flex justify-between">
         <a class="logo" href="./index.html">
-          <img
-            class="logo-icon"
-            src="./src/assets/svg/logo-icon.svg"
-            alt="Logo Giard Design"
-          />
+          <svg class="logo-icon">
+            <use href="./src/assets/svg/icons.svg#logo-icon"></use>
+          </svg>
         </a>
         <ul
           class="flex items-center justify-end gap-x-3 whitespace-nowrap tablet:gap-x-6"
@@ -34,11 +32,11 @@
               Oferta
               <div
                 id="arrow-menu"
-                class="btn-icon ml-0 h-3 w-3 bg-icon-nav-arrow transition-transform duration-200"
+                class="btn-icon ml-0 h-3 min-w-[0.75rem] bg-icon-nav-arrow transition-transform duration-200"
               ></div>
             </button>
             <div
-              class="invisible absolute right-64 flex translate-y-2 flex-col gap-y-2 rounded border-2 border-accent-green bg-accent-apricot-600 px-2 py-2 text-white-400 opacity-0 shadow-md transition-all"
+              class="invisible absolute right-64 z-50 flex translate-y-2 flex-col gap-y-2 rounded border-2 border-accent-green bg-accent-apricot-600 px-2 py-2 text-white-400 opacity-0 shadow-md transition-all"
               id="dropdown-menu"
             >
               <a
@@ -113,7 +111,7 @@
             podejściem do każdego projektu.
           </p>
           <div
-            class="mb-6 flex flex-col gap-x-9 gap-y-4 self-center whitespace-nowrap mobile-md-end:flex-row mobile-md-end:gap-x-1 tablet:mb-0 tablet:self-start laptop:flex-row"
+            class="mb-6 flex flex-col gap-x-9 gap-y-4 self-center whitespace-nowrap mobile-md-end:flex-row mobile-md-end:items-center mobile-md-end:gap-x-1 tablet:mb-0 tablet:self-start laptop:flex-row laptop:items-center"
           >
             <a href="#contact" class="btn btn-longer bg-accent-green">
               Skontaktuj się z nami
@@ -130,14 +128,47 @@
           </div>
         </div>
         <!-- --------------  Slider  -------------- -->
-        <div>
-          <img
-            class="max-h-[25rem] w-full object-cover tablet:max-h-[35rem] laptop:max-h-[46rem]"
-            src="./src/assets/images/hero-banner.jpg"
-            alt="Banner"
-          />
-          <button class="absolute"></button>
-          <button class="absolute"></button>
+        <div class="relative">
+          <div
+            id="slider-container"
+            class="slider-scroll-none scroll-x flex snap-x snap-mandatory overflow-x-hidden scroll-smooth"
+          >
+            <img
+              id="banner"
+              class="max-h-[25rem] min-w-full snap-center object-cover tablet:max-h-[35rem] laptop:max-h-[46rem]"
+              src="./src/assets/images/hero-banner.jpg"
+              alt="Banner"
+            />
+            <img
+              class="max-h-[25rem] min-w-full snap-center object-cover tablet:max-h-[35rem] laptop:max-h-[46rem]"
+              src="./src/assets/images/slider/garder-walkway.jpg"
+              alt="Banner"
+            />
+            <img
+              class="max-h-[25rem] min-w-full snap-center object-cover tablet:max-h-[35rem] laptop:max-h-[46rem]"
+              src="./src/assets/images/slider/garden-walkway-roof.jpg"
+              alt="Banner"
+            />
+          </div>
+
+          <div
+            class="absolute bottom-0 right-0 flex gap-x-8 bg-white-400 px-4 py-3 laptop:px-8 laptop:py-5"
+          >
+            <button id="btn-left" class="btn-slide">
+              <svg
+                class="h-8 w-8 p-1 transition-colors hover:fill-accent-lightgreen tablet:h-12 tablet:w-12 tablet:p-2"
+              >
+                <use href="/src/assets/svg/icons.svg#button-arrow-icon"></use>
+              </svg>
+            </button>
+            <button id="btn-right" class="btn-slider">
+              <svg
+                class="h-8 w-8 rotate-180 p-1 hover:fill-accent-lightgreen tablet:h-12 tablet:w-12 tablet:p-2"
+              >
+                <use href="/src/assets/svg/icons.svg#button-arrow-icon"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -193,7 +224,7 @@
                 spaceru animowanego w technologii 3D.
               </p>
             </div>
-            <a class="card-link" href=""
+            <a class="card-link" href="#"
               >Dowiedz się więcej
               <div class="card-arrow btn-icon bg-icon-arrow"></div
             ></a>
@@ -212,7 +243,7 @@
                 zaawansowanych technologii.
               </p>
             </div>
-            <a class="card-link" href=""
+            <a class="card-link" href="#"
               >Dowiedz się więcej
               <div class="card-arrow btn-icon bg-icon-arrow"></div
             ></a>
@@ -336,9 +367,11 @@
             />
           </div>
           <div
-            class="absolute inset-x-0 bottom-0 top-1/4 z-20 flex items-end justify-center bg-gradient desktop:top-[29.69rem]"
+            id="blocker"
+            class="absolute inset-x-0 bottom-0 top-1/4 z-20 flex items-end justify-center bg-gradient transition-transform duration-200 desktop:top-[29.69rem]"
           >
             <button
+              id="btn-more"
               class="btn bottom-[2.84rem] left-0 mb-[2.84rem] border border-black text-black"
             >
               Rozwiń
@@ -386,11 +419,9 @@
           class="flex flex-col items-center justify-center gap-x-12 gap-y-8 mobile-md-end:flex-row tablet:flex-row tablet:justify-between"
         >
           <a class="logo" href="./index.html">
-            <img
-              class="logo-icon"
-              src="/src/assets/svg/logo-light-icon.svg"
-              alt="Logo Giard Design "
-            />
+            <svg class="logo-icon fill-white-400">
+              <use href="/src/assets/svg/icons.svg#logo-icon"></use>
+            </svg>
           </a>
 
           <div
@@ -412,25 +443,50 @@
             class="flex flex-wrap gap-x-0 gap-y-6 text-center tablet:gap-x-4 tablet:text-left laptop:gap-x-12"
           >
             <li class="basis-1/2 tablet:basis-auto">
-              <a href="#contact">Kontakt</a>
+              <a class="hover:text-accent-lightgreen" href="#contact"
+                >Kontakt</a
+              >
             </li>
             <li class="basis-1/2 tablet:basis-auto">
-              <a target="_blank" href="https://www.instagram.com">Instagram</a>
+              <a
+                class="hover:text-accent-lightgreen"
+                target="_blank"
+                href="https://www.instagram.com"
+                >Instagram</a
+              >
             </li>
             <li class="basis-1/2 tablet:basis-auto">
-              <a target="_blank" href="https://www.facebook.com">Facebook</a>
+              <a
+                class="hover:text-accent-lightgreen"
+                target="_blank"
+                href="https://www.facebook.com"
+                >Facebook</a
+              >
             </li>
             <li class="basis-1/2 tablet:basis-auto">
-              <a target="_blank" href="https://www.linkedin.com">LinkedIn</a>
+              <a
+                class="hover:text-accent-lightgreen"
+                target="_blank"
+                href="https://www.linkedin.com"
+                >LinkedIn</a
+              >
             </li>
           </ul>
 
           <ul class="flex flex-col gap-y-4 text-center laptop:flex-row">
             <li>
-              <a class="laptop:mr-12" href="tel:000000000">000-000-000</a>
+              <a
+                class="hover:text-accent-lightgreen laptop:mr-12"
+                href="tel:000000000"
+                >000-000-000</a
+              >
             </li>
             <li>
-              <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+              <a
+                class="hover:text-accent-lightgreen"
+                href="mailto:giarddesign@kontakt.pl"
+                >giarddesign@kontakt.pl</a
+              >
             </li>
           </ul>
         </div>
@@ -442,12 +498,12 @@
         <p>Prawa zastrzeżone © 2022</p>
         <div class="flex gap-x-4">
           <p>made by</p>
-          <a class="logo" href="https://adrespect.pl">
-            <img
-              class="h-[1.4rem] min-w-[7rem]"
-              src="/src/assets/svg/company-logo.svg"
-              alt="Logo firmy adRespect"
-            />
+          <a class="logo" target="_blank" href="https://adrespect.pl">
+            <svg
+              class="h-[1.4rem] w-[7rem] fill-accent-blue text-white-400 transition-colors hover:text-accent-lightgreen"
+            >
+              <use href="/src/assets/svg/icons.svg#company-logo-icon"></use>
+            </svg>
           </a>
         </div>
         <div

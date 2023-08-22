@@ -11,7 +11,6 @@ export const handleScrollLock = () => {
   if (!desktopMedia.matches) {
     document.body.style.paddingRight = scrollBarWidth + "px";
   }
-  console.log(els.gallery.parentElement);
 };
 
 export const handleScrollUnlock = () => {

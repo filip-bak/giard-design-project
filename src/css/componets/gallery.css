@@ -1,6 +1,6 @@
 @layer components {
   .gallery {
-    @apply mx-auto;
+    @apply mx-auto overflow-hidden;
   }
   .gallery-item {
     @apply mb-[2.63rem] h-[21rem] w-[270px] cursor-pointer;

@@ -3,6 +3,6 @@
     @apply flex items-center;
   }
   .logo-icon {
-    @apply h-[1.19rem] min-w-[7.15rem];
+    @apply h-[1.19rem] w-[7.15rem];
   }
 }

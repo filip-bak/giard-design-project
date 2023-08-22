@@ -44,7 +44,7 @@
     @apply pb-3 pt-[0.62rem];
   }
   .btn-icon {
-    @apply ml-2 inline-block h-4 w-4 bg-cover bg-center bg-no-repeat align-middle;
+    @apply ml-2 inline-block h-4 min-w-[1rem] bg-cover bg-center bg-no-repeat align-middle;
   }
   .btn-icon-transition {
     @apply transition-[filter] duration-150;

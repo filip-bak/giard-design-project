@@ -8,4 +8,10 @@
   .arrow-rotate {
     @apply rotate-180 transition-transform duration-200;
   }
+  .add-more {
+    @apply pointer-events-none translate-y-full opacity-0 transition-all duration-200;
+  }
+  .slider-scroll-none::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -3,7 +3,10 @@
     @apply grid grid-cols-1  items-center justify-center gap-x-6  gap-y-10 self-center mobile-end:max-w-md tablet:grid-cols-4   tablet-end:max-w-[52rem]  laptop:grid-cols-3 laptop:gap-x-16;
   }
   .card-item {
-    @apply flex h-full flex-col items-start justify-between rounded-[1.75rem] bg-white-500 px-10 py-12;
+    @apply flex h-full flex-col items-start justify-between rounded-[1.75rem] bg-white-500 px-10 py-12 transition-shadow duration-200;
+  }
+  .card-item:hover {
+    @apply shadow-lg transition-shadow;
   }
   .card-content {
     @apply mb-16 mt-8;

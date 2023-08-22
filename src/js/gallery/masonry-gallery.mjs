@@ -3,7 +3,7 @@ import { getLargeImg } from "../utils/getLargeImg";
 import { els } from "/src/main";
 import { desktopMedia, handleScrollLock } from "../utils/scrollLock";
 
-let msnry = new Masonry(".gallery", {
+export let msnry = new Masonry(".gallery", {
   itemSelector: ".gallery-item",
   transitionDuration: "0.2s",
   horizontalOrder: true,
