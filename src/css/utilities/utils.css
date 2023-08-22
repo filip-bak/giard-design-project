@@ -2,7 +2,10 @@
   .search-active {
     @apply visible  w-full translate-x-0 scale-x-100  opacity-100  duration-300;
   }
-  .width-inherit {
-    width: inherit;
+  .show-menu {
+    @apply visible translate-x-0 opacity-100;
+  }
+  .arrow-rotate {
+    @apply rotate-180 transition-transform duration-200;
   }
 }

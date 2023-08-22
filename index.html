@@ -27,21 +27,50 @@
           class="flex items-center justify-end gap-x-3 whitespace-nowrap tablet:gap-x-6"
         >
           <li class="hidden tablet:list-item">
-            <button class="flex items-center gap-x-[0.31rem] text-small">
+            <button
+              id="btn-menu"
+              class="hover:text-accent-lightgreen focus:text-accent-lightgreen flex items-center gap-x-[0.31rem] text-small"
+            >
               Oferta
-              <div class="btn-icon ml-0 h-3 w-3 bg-icon-nav-arrow"></div>
+              <div
+                id="arrow-menu"
+                class="btn-icon ml-0 h-3 w-3 bg-icon-nav-arrow transition-transform duration-200"
+              ></div>
             </button>
+            <div
+              class="invisible absolute right-64 flex translate-y-2 flex-col rounded bg-white-400 px-2 py-2 opacity-0 shadow-md transition-all"
+              id="dropdown-menu"
+            >
+              <a
+                class="hover:text-accent-lightgreen gap-x-1 pl-1 text-small"
+                href="#"
+              >
+                Ogrody nowoczesne
+              </a>
+              <a
+                class="hover:text-accent-lightgreen gap-x-1 pl-1 text-small"
+                href="#"
+              >
+                Ogrody drewniane
+              </a>
+              <a
+                class="hover:text-accent-lightgreen gap-x-1 pl-1 text-small"
+                href="#"
+              >
+                Ogrody kwieciste
+              </a>
+            </div>
           </li>
-          <li class="hidden tablet:list-item">
+          <li class="hover:text-accent-lightgreen hidden tablet:list-item">
             <a class="text-small" href="">O firmie</a>
           </li>
-          <li class="hidden tablet:list-item">
+          <li class="hover:text-accent-lightgreen hidden tablet:list-item">
             <a class="text-small" href="">Realizacje</a>
           </li>
-          <li class="hidden tablet:list-item">
+          <li class="hover:text-accent-lightgreen hidden tablet:list-item">
             <a class="text-small" href="">Kontakt</a>
           </li>
-          <li class="flex">
+          <li class="flex items-center">
             <div
               class="mobile::w-36 absolute -bottom-8 right-5 z-10 h-auto rounded mobile-md-end:relative mobile-md-end:bottom-0 mobile-md-end:right-0 mobile-md-end:mr-2 tablet:right-0"
             >
@@ -52,7 +81,11 @@
                 type="text"
               />
             </div>
-            <button id="search-btn" class="btn-icon bg-icon-search"></button>
+            <button
+              id="search-btn"
+              class="btn-icon btn-loop ml-0 bg-icon-search transition"
+            ></button>
+            <!-- invert(25%) sepia(92%) saturate(355%) hue-rotate(88deg) -->
           </li>
           <li class="tablet:hidden">
             <button class="btn-icon scale-125 bg-icon-burger"></button>

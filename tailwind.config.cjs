@@ -11,6 +11,7 @@ export default {
       black: "#111",
       accent: {
         green: "#1B5B31",
+        lightgreen: "#1d9c3c",
         blue: "#003EDC",
         apricot: {
           100: "#F5F0EC",
