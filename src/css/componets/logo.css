@@ -3,6 +3,9 @@
     @apply flex items-center;
   }
   .logo-icon {
-    @apply h-[1.19rem] w-[7.15rem];
+    @apply h-[1.19rem] w-[7.15rem] transition-colors duration-300;
+  }
+  .logo-icon:hover {
+    @apply fill-accent-lightgreen transition-colors duration-300;
   }
 }
