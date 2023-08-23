@@ -2,16 +2,23 @@ import "./css/style.css";
 import { handleGaleryClick } from "./js/gallery/masonry-gallery.mjs";
 import { handleModalClick } from "./js/gallery/modal";
 import { handleMenuBtnClick, handleMenuOutsideClick } from "./js/menu/menu";
-import { handleSliderBtnLeftClick } from "./js/slider/slider.js";
 import {
   handleSearchClick,
   handleSearchEnterKey,
 } from "./js/search-bar/toggle-search";
+import { handleClickMobileNav } from "./js/menu/mobile-nav.js";
 
 import "./js/gallery/gallerymore.js";
+import "./js/menu/mobile-nav.js";
 
 export const els = {
   menuBtn: document.querySelector("#btn-menu"),
+  menuBtnMobile: document.querySelector("#btn-menu-mobile"),
+
+  dropdownMenuMobile: document.querySelector("#dropdown-menu-mobile"),
+  menuArrowMobile: document.querySelector("#arrow-menu-mobile"),
+  btnBurgerMobile: document.querySelector("#btn-burger"),
+  closeBtnMobile: document.querySelector("#mobile-close-btn"),
 
   gallery: document.querySelector(".gallery"),
 
@@ -38,5 +45,8 @@ window.addEventListener("load", () => {
   // Event listener to close the menu when clicking outside of it
   document.addEventListener("click", handleMenuOutsideClick);
 
-  // Slider
+  // Mobile
+  els.menuBtnMobile.addEventListener("click", handleMenuBtnClick);
+  els.closeBtnMobile.addEventListener("click", handleClickMobileNav);
+  els.btnBurgerMobile.addEventListener("click", handleClickMobileNav);
 });

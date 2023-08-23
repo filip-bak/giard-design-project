@@ -22,9 +22,10 @@
           </svg>
         </a>
         <ul
+          id="main-nav-list"
           class="flex items-center justify-end gap-x-3 whitespace-nowrap tablet:gap-x-6"
         >
-          <li class="hidden tablet:list-item">
+          <li data-mobile="true" class="hidden tablet:list-item">
             <button
               id="btn-menu"
               class="flex items-center gap-x-[0.31rem] text-small hover:text-accent-lightgreen focus:text-accent-lightgreen"
@@ -36,7 +37,7 @@
               ></div>
             </button>
             <div
-              class="invisible absolute right-64 z-50 flex translate-y-2 flex-col gap-y-2 rounded border-2 border-accent-green bg-accent-apricot-600 px-2 py-2 text-white-400 opacity-0 shadow-md transition-all"
+              class="invisible absolute right-64 z-[60] flex translate-y-2 flex-col gap-y-2 rounded border-2 border-accent-green bg-accent-apricot-600 px-2 py-2 text-white-400 opacity-0 shadow-md transition-all"
               id="dropdown-menu"
             >
               <a
@@ -59,13 +60,22 @@
               </a>
             </div>
           </li>
-          <li class="hidden hover:text-accent-lightgreen tablet:list-item">
+          <li
+            data-mobile="true"
+            class="hidden hover:text-accent-lightgreen tablet:list-item"
+          >
             <a class="text-small" href="#about">O firmie</a>
           </li>
-          <li class="hidden hover:text-accent-lightgreen tablet:list-item">
+          <li
+            data-mobile="true"
+            class="hidden hover:text-accent-lightgreen tablet:list-item"
+          >
             <a class="text-small" href="#accomplishments">Realizacje</a>
           </li>
-          <li class="hidden hover:text-accent-lightgreen tablet:list-item">
+          <li
+            data-mobile="true"
+            class="hidden hover:text-accent-lightgreen tablet:list-item"
+          >
             <a class="text-small" href="#contact">Kontakt</a>
           </li>
           <li class="flex items-center">
@@ -74,6 +84,7 @@
             >
               <input
                 id="search-bar"
+                autocomplete="off"
                 placeholder="Search"
                 class="transition-[transform, opacity] w-full origin-right scale-x-0 rounded bg-accent-apricot-600 px-2 py-[0.1rem] text-white-400 opacity-0 duration-300 placeholder:text-white-400 focus:ring-2 focus:ring-inset focus:ring-accent-green focus-visible:outline-none"
                 type="text"
@@ -86,10 +97,30 @@
           </li>
           <li class="flex tablet:hidden">
             <button
+              id="btn-burger"
               class="btn-icon btn-icon-transition scale-125 bg-icon-burger"
             ></button>
           </li>
         </ul>
+        <!-- Mobile Navigation -->
+        <div
+          id="mobile-nav"
+          class="fixed right-0 top-0 z-50 h-full w-40 translate-x-full bg-accent-apricot-600 pt-16 transition-transform duration-300 tablet:hidden"
+        >
+          <button id="mobile-close-btn">
+            <svg
+              class="absolute right-2 top-2 h-10 w-10 fill-white-400 transition-colors duration-300 hover:fill-accent-lightgreen"
+            >
+              <use href="/src/assets/svg/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+          <nav class="relative">
+            <ul
+              id="mobile-nav-container"
+              class="flex flex-col items-center gap-y-5 text-left text-2xl/normal text-white-400"
+            ></ul>
+          </nav>
+        </div>
       </nav>
     </header>
     <main class="">

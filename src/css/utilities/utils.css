@@ -8,9 +8,15 @@
   .arrow-rotate {
     @apply rotate-180 transition-transform duration-200;
   }
+  #arrow-menu-mobile.arrow-rotate {
+    @apply rotate-[270deg];
+  }
   .filter-lightgreen {
     filter: invert(25%) sepia(92%) saturate(355%) hue-rotate(88deg)
       brightness(92%) contrast(92%);
+  }
+  .show-mobile-nav {
+    @apply translate-x-0 transition-transform duration-300;
   }
   .add-more {
     @apply pointer-events-none translate-y-full transition-all duration-[3s];
