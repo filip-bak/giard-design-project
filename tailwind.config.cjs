@@ -63,6 +63,12 @@ export default {
       letterSpacing: {
         tightest: "-.01rem",
       },
+      keyframes: {
+        bounce: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(3px)" },
+        },
+      },
     },
   },
   plugins: [],
