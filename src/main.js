@@ -7,8 +7,10 @@ import {
   handleSearchEnterKey,
 } from "./js/search-bar/toggle-search";
 import { handleClickMobileNav } from "./js/menu/mobile-nav.js";
+import { loaded } from "./js/gallery/placeholder.mjs";
 
 import "./js/gallery/gallerymore.js";
+import "./js/gallery/placeholder.mjs";
 import "./js/slider/slider.js";
 import "./js/menu/mobile-nav.js";
 
@@ -40,6 +42,7 @@ window.addEventListener("load", () => {
 
   // Modal
   els.modal.addEventListener("click", handleModalClick);
+  els.modalImg.addEventListener("load", loaded);
 
   // Menu
   els.menuBtn.addEventListener("click", handleMenuBtnClick);

@@ -15,9 +15,11 @@ export function handleGaleryClick(e) {
   if (e.target.nodeName !== "IMG") return;
 
   els.modal.ariaHidden = "false";
-  els.modalImg.src = getLargeImg(e.target.srcset);
-  handleScrollLock();
 
+  els.modalImg.src = getLargeImg(e.target.srcset);
+  els.modalImg.parentElement.style.backgroundImage = `url(${e.target.dataset.placeholder})`;
+
+  handleScrollLock();
   if (desktopMedia.matches) {
     return;
   }

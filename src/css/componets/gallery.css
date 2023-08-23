@@ -14,7 +14,7 @@
     }
   }
   .gallery-item img {
-    @apply h-full w-full object-cover;
+    @apply h-full w-full object-cover object-center;
   }
   .gallery-item--medium {
     @apply h-[28rem];

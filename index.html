@@ -338,6 +338,7 @@
             <img
               src="/src/assets/images/gallery/palm-garden.jpg"
               srcset="/src/assets/images/gallery/palm-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/palm-garden-small.jpg"
               alt=""
             />
           </div>
@@ -345,6 +346,7 @@
             <img
               src="/src/assets/images/gallery/modern-garden.jpg"
               srcset="/src/assets/images/gallery/modern-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/modern-garden-small.jpg"
               alt=""
             />
           </div>
@@ -352,6 +354,7 @@
             <img
               src="/src/assets/images/gallery/rose-garden.jpg"
               srcset="/src/assets/images/gallery/rose-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/rose-garden-small.jpg"
               alt=""
             />
           </div>
@@ -359,6 +362,7 @@
             <img
               src="/src/assets/images/gallery/steel-garden.jpg"
               srcset="/src/assets/images/gallery/steel-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/steel-garden-small.jpg"
               alt=""
             />
           </div>
@@ -366,6 +370,7 @@
             <img
               src="/src/assets/images/gallery/water-pond.jpg"
               srcset="/src/assets/images/gallery/water-pond@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/water-pond-small.jpg"
               alt=""
             />
           </div>
@@ -373,6 +378,7 @@
             <img
               src="/src/assets/images/gallery/jungle-garden.jpg"
               srcset="/src/assets/images/gallery/jungle-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/jungle-garden-small.jpg"
               alt=""
             />
           </div>
@@ -380,6 +386,7 @@
             <img
               src="/src/assets/images/gallery/stairs-garden.jpg"
               srcset="/src/assets/images/gallery/stairs-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/stairs-garden-small.jpg"
               alt=""
             />
           </div>
@@ -387,6 +394,7 @@
             <img
               src="/src/assets/images/gallery/wodden-garden.jpg"
               srcset="/src/assets/images/gallery/wodden-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/wodden-garden-small.jpg"
               alt=""
             />
           </div>
@@ -394,6 +402,7 @@
             <img
               src="/src/assets/images/gallery/roof-garden.jpg"
               srcset="/src/assets/images/gallery/roof-garden@2x.jpg 2x"
+              data-placeholder="gallery/placeholders/roof-garden-small.jpg"
               alt=""
             />
           </div>
@@ -550,12 +559,13 @@
     <!-- --------------  Modal  -------------- -->
     <div id="modal" aria-hidden="true" class="modal-backdrop">
       <div class="modal-container">
-        <img
-          id="modal-img"
-          class="mx-auto h-full w-full"
-          src=""
-          alt="Modal Image"
-        />
+        <div class="placeholder">
+          <img
+            id="modal-img"
+            class="mx-auto h-full w-full object-cover object-center opacity-0 duration-200"
+            alt="Modal Image"
+          />
+        </div>
       </div>
     </div>
 
