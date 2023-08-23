@@ -20,14 +20,5 @@ export function handleSliderBtnRightClick() {
   moveSlider("right");
 }
 
-// slider.addEventListener(
-//   "wheel",
-//   (e) => {
-//     e.preventDefault();
-//     slider.scrollLeft += e.deltaY;
-//   },
-//   { passive: true },
-// );
-
 sliderBtnLeft.addEventListener("click", handleSliderBtnLeftClick);
 sliderBtnRight.addEventListener("click", handleSliderBtnRightClick);

@@ -34,7 +34,6 @@ btnMore.addEventListener("click", () => {
     div.append(img);
     galleryItems.push(div);
   });
-  console.log(galleryItems);
 
   els.gallery.append(...galleryItems);
   msnry.appended(galleryItems);

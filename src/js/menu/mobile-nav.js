@@ -28,7 +28,6 @@ mainNavList.forEach((el, i) => {
     const btnMenu = copy.querySelector("#btn-menu");
     const btnArrow = copy.querySelector("#btn-menu #arrow-menu");
     const dropdownMenu = copy.querySelector("#dropdown-menu");
-    console.log(btnMenu, btnArrow, dropdownMenu);
 
     const elementsToChange = [btnMenu, btnArrow, dropdownMenu];
     changeToMobileId(elementsToChange);
@@ -53,7 +52,3 @@ export function handleClickMobileNav(e) {
 //   arrow-menu
 
 mobileNavList.append(...mainNavListCopies);
-
-console.log("copy", mainNavListCopies);
-console.log(mainNavList);
-console.log(mobileNav);
