@@ -9,6 +9,7 @@ import {
 import { handleClickMobileNav } from "./js/menu/mobile-nav.js";
 
 import "./js/gallery/gallerymore.js";
+import "./js/slider/slider.js";
 import "./js/menu/mobile-nav.js";
 
 export const els = {
